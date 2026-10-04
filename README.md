@@ -2,6 +2,10 @@
 
 <br>
 
+<img src="./assets/terminal.svg" width="100%" alt="$ curl mohamadhalakoei.ir/whoami — Senior Backend Developer · backend, data platforms, AI agents · open to freelance" />
+
+<br>
+
 I design and build scalable backend systems, data platforms and AI-powered tools — from the database schema and API layer to async workers, LLM agents and the dashboards people use to make decisions.
 
 <br>
