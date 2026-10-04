@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="t">
+  <title id="t">What I do: backend architecture, data platforms, AI and automation, delivery</title>
+  <style>
+    :root { --panel:#FFFFFF; --ink:#0F172A; --muted:#5B6476; --line:#D7DCE6; --accent:#2F5BD3; --tint:#EEF2FC; }
+    @media (prefers-color-scheme: dark) {
+      :root { --panel:#151B24; --ink:#E6EAF2; --muted:#8B95A7; --line:#2A3342; --accent:#6E95FF; --tint:#1B2433; }
+    }
+    .card { fill: var(--panel); stroke: var(--line); stroke-width: 1.2; }
+    .chip { fill: var(--tint); }
+    .ico { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .h { font: 650 22px -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; fill: var(--ink); }
+    .p { font: 400 16px -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; fill: var(--muted); }
+    .tag { font: 500 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: var(--accent); letter-spacing: .04em; }
+  </style>
+
+  <!-- backend architecture -->
+  <rect class="card" x="1" y="1" width="590" height="170" rx="18"/>
+  <rect class="chip" x="32" y="32" width="48" height="48" rx="12"/>
+  <g class="ico"><rect x="44" y="44" width="24" height="9" rx="2"/><rect x="44" y="59" width="24" height="9" rx="2"/><path d="M49 48.5h.01M49 63.5h.01"/></g>
+  <text class="h" x="100" y="58">Backend architecture</text>
+  <text class="tag" x="100" y="80">APIS · SERVICES · DATABASES</text>
+  <text class="p" x="32" y="120">Service design, REST APIs, database modeling and</text>
+  <text class="p" x="32" y="144">query optimization, caching and async processing.</text>
+
+  <!-- data platforms -->
+  <rect class="card" x="609" y="1" width="590" height="170" rx="18"/>
+  <rect class="chip" x="640" y="32" width="48" height="48" rx="12"/>
+  <g class="ico"><path d="M652 68V56M661 68V48M670 68V60M679 68V52"/></g>
+  <text class="h" x="708" y="58">Data platforms</text>
+  <text class="tag" x="708" y="80">PIPELINES · ANALYTICS · DASHBOARDS</text>
+  <text class="p" x="640" y="120">Data pipelines, ETL and interactive analytics</text>
+  <text class="p" x="640" y="144">dashboards that support real decisions.</text>
+
+  <!-- ai and automation -->
+  <rect class="card" x="1" y="189" width="590" height="170" rx="18"/>
+  <rect class="chip" x="32" y="220" width="48" height="48" rx="12"/>
+  <g class="ico"><path d="M56 232v4M56 252v4M44 244h4M64 244h4"/><circle cx="56" cy="244" r="6"/></g>
+  <text class="h" x="100" y="246">AI &amp; automation</text>
+  <text class="tag" x="100" y="268">LLM AGENTS · OCR · SCRAPING</text>
+  <text class="p" x="32" y="308">LLM-powered agents, OCR and image processing,</text>
+  <text class="p" x="32" y="332">web scraping and workflow automation.</text>
+
+  <!-- delivery -->
+  <rect class="card" x="609" y="189" width="590" height="170" rx="18"/>
+  <rect class="chip" x="640" y="220" width="48" height="48" rx="12"/>
+  <g class="ico"><path d="M652 250l8 6 16-18"/><path d="M652 238h10"/></g>
+  <text class="h" x="708" y="246">Delivery</text>
+  <text class="tag" x="708" y="268">DOCKER · CI/CD · TESTING</text>
+  <text class="p" x="640" y="308">Containerized services, CI/CD pipelines, testing</text>
+  <text class="p" x="640" y="332">and production-ready deployments.</text>
+</svg>
