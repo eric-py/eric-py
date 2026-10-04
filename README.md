@@ -12,15 +12,9 @@ I design and build scalable backend systems, data platforms and AI-powered tools
 
 ### Tech stack
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,django,fastapi,flask,postgres,mysql,mongodb,redis,opencv,go,c,cpp,php&perline=13&theme=dark" />
-  <img src="https://skillicons.dev/icons?i=python,django,fastapi,flask,postgres,mysql,mongodb,redis,opencv,go,c,cpp,php&perline=13&theme=light" alt="Python, Django, FastAPI, Flask, PostgreSQL, MySQL, MongoDB, Redis, OpenCV, Go, C, C++, PHP" />
-</picture>
+<img src="https://skillicons.dev/icons?i=python%2Cdjango%2Cfastapi%2Cflask%2Cpostgres%2Cmysql%2Cmongodb%2Credis%2Copencv%2Cgo%2Cc%2Ccpp%2Cphp&perline=13&theme=dark" alt="Python, Django, FastAPI, Flask, PostgreSQL, MySQL, MongoDB, Redis, OpenCV, Go, C, C++, PHP" />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=docker,nginx,linux,debian,bash,git,github,gitlab,githubactions,react,ts,js,html,css,tailwind,bootstrap,vim&perline=17&theme=dark" />
-  <img src="https://skillicons.dev/icons?i=docker,nginx,linux,debian,bash,git,github,gitlab,githubactions,react,ts,js,html,css,tailwind,bootstrap,vim&perline=17&theme=light" alt="Docker, Nginx, Linux, Debian, Bash, Git, GitHub, GitLab, GitHub Actions, React, TypeScript, JavaScript, HTML, CSS, Tailwind, Bootstrap, Vim" />
-</picture>
+<img src="https://skillicons.dev/icons?i=docker%2Cnginx%2Clinux%2Cdebian%2Cbash%2Cgit%2Cgithub%2Cgitlab%2Cgithubactions%2Creact%2Cts%2Cjs%2Chtml%2Ccss%2Ctailwind%2Cbootstrap%2Cvim&perline=17&theme=dark" alt="Docker, Nginx, Linux, Debian, Bash, Git, GitHub, GitLab, GitHub Actions, React, TypeScript, JavaScript, HTML, CSS, Tailwind, Bootstrap, Vim" />
 
 <br>
 
