@@ -1,83 +1,36 @@
-<h1 align="left">Hey 👋 What's up?</h1>
+<img src="./assets/banner.svg" width="100%" alt="Mohamad Halakoei — Senior Backend Developer" />
 
-###
+<br>
 
-<p align="left">My name is Eric and I'm a backend developer with expertise in Python and Django, based in Iran.</p>
+I design and build scalable backend systems, data platforms and AI-powered tools — from the database schema and API layer to async workers, LLM agents and the dashboards people use to make decisions.
 
-###
+<br>
 
-<h2 align="left">About me</h2>
+<img src="./assets/focus.svg" width="100%" alt="Backend architecture · Data platforms · AI & automation · Delivery" />
 
-###
+<br>
 
-<p align="left">✨ Creating bugs since I wrote my first "Hello, World!" in Python!<br>📚 I'm currently exploring AI and machine learning with Python.<br>🎯 Goals: Building scalable web applications and becoming a top-tier backend engineer.<br>🎲 Fun fact: I still Google "How to exit Vim" every time!</p>
+### Tech stack
 
-###
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,django,fastapi,flask,postgres,mysql,mongodb,redis,opencv,go,c,cpp,php&perline=13&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=python,django,fastapi,flask,postgres,mysql,mongodb,redis,opencv,go,c,cpp,php&perline=13&theme=light" alt="Python, Django, FastAPI, Flask, PostgreSQL, MySQL, MongoDB, Redis, OpenCV, Go, C, C++, PHP" />
+</picture>
 
-<h2 align="left">I code with</h2>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=docker,nginx,linux,debian,bash,git,github,gitlab,githubactions,react,ts,js,html,css,tailwind,bootstrap,vim&perline=17&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=docker,nginx,linux,debian,bash,git,github,gitlab,githubactions,react,ts,js,html,css,tailwind,bootstrap,vim&perline=17&theme=light" alt="Docker, Nginx, Linux, Debian, Bash, Git, GitHub, GitLab, GitHub Actions, React, TypeScript, JavaScript, HTML, CSS, Tailwind, Bootstrap, Vim" />
+</picture>
 
-###
+<br>
 
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" height="40" alt="django logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height="40" alt="flask logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" height="40" alt="matlab logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" height="40" alt="gitlab logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" height="40" alt="debian logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" alt="mongodb logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" height="40" alt="opencv logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="40" alt="c logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="php logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" height="40" alt="go logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" height="40" alt="tailwindcss logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="40" alt="bash logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" height="40" alt="vim logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" height="40" alt="nginx logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="40" alt="arduino logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" height="40" alt="markdown logo"  />
-</div>
+### Let's connect
 
-###
+<a href="https://mohamadhalakoei.ir"><img src="https://img.shields.io/badge/mohamadhalakoei.ir-2F5BD3?style=flat-square&logo=googlechrome&logoColor=white" alt="Website" height="28" /></a>
+<a href="https://www.linkedin.com/in/mohamadhalakoei"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" height="28" /></a>
+<a href="mailto:itshalakoei@gmail.com"><img src="https://img.shields.io/badge/itshalakoei@gmail.com-1F2937?style=flat-square&logo=gmail&logoColor=white" alt="Email" height="28" /></a>
+<a href="https://t.me/ichbineric"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram" height="28" /></a>
 
-<img src="https://raw.githubusercontent.com/eric-py/eric-py/output/snake.svg" alt="Snake animation" />
+<br>
 
-###
+<img src="https://raw.githubusercontent.com/eric-py/eric-py/output/snake.svg" width="100%" alt="Contribution snake animation" />
