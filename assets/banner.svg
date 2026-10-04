@@ -2,7 +2,7 @@
   <title id="t">Mohamad Halakoei — Senior Backend Developer</title>
   <desc id="d">Backend, data and AI systems</desc>
   <style>
-    /* Layout: identity on the left, a quiet service graph on the right */
+    /* Layout: identity on the left, a service graph on the right that wires itself up on load */
     :root { --bg:#F7F8FB; --panel:#FFFFFF; --ink:#0F172A; --muted:#5B6476; --line:#D7DCE6; --grid:#E7EAF1; --accent:#2F5BD3; --warm:#D9922E; }
     @media (prefers-color-scheme: dark) {
       :root { --bg:#0D1117; --panel:#151B24; --ink:#E6EAF2; --muted:#8B95A7; --line:#2A3342; --grid:#1A212C; --accent:#6E95FF; --warm:#E8A94B; }
@@ -20,7 +20,27 @@
     .pulse { fill: var(--accent); }
     .pulse.warm { fill: var(--warm); }
     .bar { fill: var(--accent); }
-    @media (prefers-reduced-motion: reduce) { .pulse { display: none; } }
+
+    /* entrance */
+    .rise { opacity: 0; animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
+    .r1 { animation-delay: .1s; } .r2 { animation-delay: .25s; } .r3 { animation-delay: .4s; } .r4 { animation-delay: .55s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    .barin { transform-box: fill-box; transform-origin: left; animation: grow .6s ease-out .1s both; }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+    .node { opacity: 0; animation: pop .45s ease-out both; }
+    .n1 { animation-delay: .7s; } .n2 { animation-delay: .85s; } .n3 { animation-delay: 1.15s; } .n4 { animation-delay: 1.25s; }
+    .n5 { animation-delay: 1.35s; } .n6 { animation-delay: 1.6s; } .n7 { animation-delay: 1.7s; }
+    @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+    .edge { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw .6s ease-in-out both; }
+    .e1 { animation-delay: .8s; } .e2, .e3 { animation-delay: 1s; } .e4 { animation-delay: 1.2s; } .e5 { animation-delay: 1.45s; } .e6 { animation-delay: 1.55s; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .rise, .node, .barin, .edge { animation: none; opacity: 1; stroke-dashoffset: 0; transform: none; }
+      .pulse { display: none; }
+    }
   </style>
   <defs>
     <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
@@ -33,30 +53,32 @@
   <rect x="640" y="1" width="559" height="318" fill="url(#dots)" clip-path="url(#frame)"/>
 
   <!-- identity -->
-  <rect class="bar" x="64" y="78" width="28" height="4" rx="2"/>
-  <text class="eyebrow" x="104" y="85">BACKEND · DATA · AI</text>
-  <text class="name" x="62" y="160">Mohamad Halakoei</text>
-  <text class="role" x="64" y="202">Senior Backend Developer</text>
-  <text class="stack" x="64" y="250">python · django · fastapi · postgresql · redis · llm agents</text>
+  <rect class="bar barin" x="64" y="78" width="28" height="4" rx="2"/>
+  <text class="eyebrow rise r1" x="104" y="85">BACKEND · DATA · AI</text>
+  <text class="name rise r2" x="62" y="160">Mohamad Halakoei</text>
+  <text class="role rise r3" x="64" y="202">Senior Backend Developer</text>
+  <text class="stack rise r4" x="64" y="250">python · django · fastapi · postgresql · redis · llm agents</text>
 
   <!-- service graph -->
-  <path id="e1" class="edge" d="M790 100 H870"/>
-  <path id="e2" class="edge" d="M960 100 C1000 100 1000 70 1040 70"/>
-  <path id="e3" class="edge" d="M960 100 C1000 100 1000 160 1040 160"/>
-  <path id="e4" class="edge" d="M915 120 V200"/>
-  <path id="e5" class="edge" d="M960 220 H1040"/>
-  <path id="e6" class="edge" d="M870 228 C835 228 835 266 810 266"/>
+  <path id="e1" class="edge e1" pathLength="1" d="M790 100 H870"/>
+  <path id="e2" class="edge e2" pathLength="1" d="M960 100 C1000 100 1000 70 1040 70"/>
+  <path id="e3" class="edge e3" pathLength="1" d="M960 100 C1000 100 1000 160 1040 160"/>
+  <path id="e4" class="edge e4" pathLength="1" d="M915 120 V200"/>
+  <path id="e5" class="edge e5" pathLength="1" d="M960 220 H1040"/>
+  <path id="e6" class="edge e6" pathLength="1" d="M870 228 C835 228 835 266 810 266"/>
 
-  <g class="node"><rect x="700" y="80" width="90" height="40" rx="10"/><text x="745" y="105" text-anchor="middle">client</text></g>
-  <g class="node hot"><rect x="870" y="80" width="90" height="40" rx="10"/><text x="915" y="105" text-anchor="middle">api</text></g>
-  <g class="node"><rect x="1040" y="50" width="104" height="40" rx="10"/><text x="1092" y="75" text-anchor="middle">postgres</text></g>
-  <g class="node"><rect x="1040" y="140" width="104" height="40" rx="10"/><text x="1092" y="165" text-anchor="middle">redis</text></g>
-  <g class="node"><rect x="870" y="200" width="90" height="40" rx="10"/><text x="915" y="225" text-anchor="middle">worker</text></g>
-  <g class="node hot"><rect x="1040" y="200" width="104" height="40" rx="10"/><text x="1092" y="225" text-anchor="middle">llm agent</text></g>
-  <g class="node"><rect x="700" y="246" width="110" height="40" rx="10"/><text x="755" y="271" text-anchor="middle">dashboard</text></g>
+  <g class="node n1"><rect x="700" y="80" width="90" height="40" rx="10"/><text x="745" y="105" text-anchor="middle">client</text></g>
+  <g class="node hot n2"><rect x="870" y="80" width="90" height="40" rx="10"/><text x="915" y="105" text-anchor="middle">api</text></g>
+  <g class="node n3"><rect x="1040" y="50" width="104" height="40" rx="10"/><text x="1092" y="75" text-anchor="middle">postgres</text></g>
+  <g class="node n4"><rect x="1040" y="140" width="104" height="40" rx="10"/><text x="1092" y="165" text-anchor="middle">redis</text></g>
+  <g class="node n5"><rect x="870" y="200" width="90" height="40" rx="10"/><text x="915" y="225" text-anchor="middle">worker</text></g>
+  <g class="node hot n6"><rect x="1040" y="200" width="104" height="40" rx="10"/><text x="1092" y="225" text-anchor="middle">llm agent</text></g>
+  <g class="node n7"><rect x="700" y="246" width="110" height="40" rx="10"/><text x="755" y="271" text-anchor="middle">dashboard</text></g>
 
-  <circle class="pulse" r="4"><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#e1"/></animateMotion></circle>
-  <circle class="pulse" r="4"><animateMotion dur="3.2s" begin="-0.8s" repeatCount="indefinite"><mpath href="#e2"/></animateMotion></circle>
-  <circle class="pulse warm" r="4"><animateMotion dur="3.6s" begin="-1.4s" repeatCount="indefinite"><mpath href="#e5"/></animateMotion></circle>
-  <circle class="pulse" r="4"><animateMotion dur="4s" begin="-0.4s" repeatCount="indefinite"><mpath href="#e4"/></animateMotion></circle>
+  <!-- traffic starts once the graph is wired -->
+  <circle class="pulse" r="4" opacity="0"><set attributeName="opacity" to="1" begin="2.2s"/><animateMotion dur="3.2s" begin="2.2s" repeatCount="indefinite"><mpath href="#e1"/></animateMotion></circle>
+  <circle class="pulse" r="4" opacity="0"><set attributeName="opacity" to="1" begin="2.6s"/><animateMotion dur="3.2s" begin="2.6s" repeatCount="indefinite"><mpath href="#e2"/></animateMotion></circle>
+  <circle class="pulse" r="4" opacity="0"><set attributeName="opacity" to="1" begin="3s"/><animateMotion dur="4s" begin="3s" repeatCount="indefinite"><mpath href="#e4"/></animateMotion></circle>
+  <circle class="pulse warm" r="4" opacity="0"><set attributeName="opacity" to="1" begin="3.4s"/><animateMotion dur="3.6s" begin="3.4s" repeatCount="indefinite"><mpath href="#e5"/></animateMotion></circle>
+  <circle class="pulse" r="4" opacity="0"><set attributeName="opacity" to="1" begin="3.8s"/><animateMotion dur="4.4s" begin="3.8s" repeatCount="indefinite"><mpath href="#e6"/></animateMotion></circle>
 </svg>

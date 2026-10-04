@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="t">
+  <title id="t">$ curl mohamadhalakoei.ir/whoami — Senior Backend Developer, focus: backend, data platforms, AI agents; open to freelance</title>
+  <style>
+    /* Layout: a single terminal window; command types in, then the JSON reply prints line by line */
+    :root { --win:#FFFFFF; --bar:#F1F3F8; --line:#D7DCE6; --ink:#0F172A; --muted:#6B7385; --accent:#2F5BD3; --key:#7A3FC4; --str:#1F8A5B; --num:#C2410C; }
+    @media (prefers-color-scheme: dark) {
+      :root { --win:#11161E; --bar:#171E29; --line:#2A3342; --ink:#E6EAF2; --muted:#8B95A7; --accent:#6E95FF; --key:#C49BFF; --str:#5FD3A0; --num:#F2A65A; }
+    }
+    .win { fill: var(--win); stroke: var(--line); stroke-width: 1.2; }
+    .bar { fill: var(--bar); }
+    .sep { stroke: var(--line); stroke-width: 1; }
+    .title { font: 500 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: var(--muted); }
+    .mono { font: 400 17px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: var(--ink); white-space: pre; }
+    .prompt { fill: var(--accent); font-weight: 600; }
+    .muted { fill: var(--muted); }
+    .k { fill: var(--key); }
+    .s { fill: var(--str); }
+    .n { fill: var(--num); }
+
+    /* typing: a mask rect grows across the command in character steps */
+    .typer { animation: type 1.6s steps(30, end) .5s both; }
+    @keyframes type { from { width: 0; } to { width: 312px; } }
+
+    .cursor { fill: var(--accent); animation: blink 1s steps(1) infinite; }
+    .cursor.c1 { animation: blink 1s steps(1) infinite, hide 0s 2.2s forwards; }
+    .cursor.c2 { opacity: 0; animation: show 0s 4.6s forwards, blink 1s steps(1) 4.6s infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes hide { to { visibility: hidden; } }
+    @keyframes show { to { opacity: 1; } }
+
+    .ln { opacity: 0; animation: print .35s ease-out both; }
+    .l1 { animation-delay: 2.3s; } .l2 { animation-delay: 2.6s; } .l3 { animation-delay: 2.9s; }
+    .l4 { animation-delay: 3.2s; } .l5 { animation-delay: 3.5s; } .l6 { animation-delay: 3.8s; } .l7 { animation-delay: 4.1s; }
+    @keyframes print { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .typer { animation: none; width: 312px; }
+      .ln { animation: none; opacity: 1; }
+      .cursor, .cursor.c1, .cursor.c2 { animation: none; }
+      .cursor.c1 { visibility: hidden; } .cursor.c2 { opacity: 1; }
+    }
+  </style>
+  <defs>
+    <clipPath id="cmd"><rect class="typer" x="80" y="73" width="0" height="30"/></clipPath>
+  </defs>
+
+  <rect class="win" x="1" y="1" width="1198" height="318" rx="16"/>
+  <path class="bar" d="M17 1h1166a16 16 0 0 1 16 16v27H1V17A16 16 0 0 1 17 1z"/>
+  <line class="sep" x1="1" y1="44" x2="1199" y2="44"/>
+  <circle cx="28" cy="23" r="6" fill="#FF5F57"/><circle cx="48" cy="23" r="6" fill="#FEBC2E"/><circle cx="68" cy="23" r="6" fill="#28C840"/>
+  <text class="title" x="600" y="27" text-anchor="middle">mohamad@prod: ~</text>
+
+  <!-- command -->
+  <text class="mono" x="36" y="94"><tspan class="prompt">~ $</tspan></text>
+  <text class="mono" x="80" y="94" clip-path="url(#cmd)">curl mohamadhalakoei.ir/whoami</text>
+  <rect class="cursor c1" x="80" y="79" width="10" height="20" rx="1">
+    <animate attributeName="x" from="80" to="389" dur="1.6s" begin="0.5s" fill="freeze" calcMode="discrete" values="80;90;101;111;121;132;142;152;162;173;183;193;204;214;224;234;245;255;265;276;286;296;307;317;327;338;348;358;368;379;389"/>
+  </rect>
+
+  <!-- response -->
+  <text class="mono ln l1" x="36" y="136">{</text>
+  <text class="mono ln l2" x="36" y="164">  <tspan class="k">"name"</tspan>: <tspan class="s">"Mohamad Halakoei"</tspan>,</text>
+  <text class="mono ln l3" x="36" y="192">  <tspan class="k">"role"</tspan>: <tspan class="s">"Senior Backend Developer"</tspan>,</text>
+  <text class="mono ln l4" x="36" y="220">  <tspan class="k">"focus"</tspan>: [<tspan class="s">"backend"</tspan>, <tspan class="s">"data platforms"</tspan>, <tspan class="s">"ai agents"</tspan>],</text>
+  <text class="mono ln l5" x="36" y="248">  <tspan class="k">"stack"</tspan>: [<tspan class="s">"python"</tspan>, <tspan class="s">"django"</tspan>, <tspan class="s">"fastapi"</tspan>, <tspan class="s">"postgresql"</tspan>, <tspan class="s">"redis"</tspan>],</text>
+  <text class="mono ln l6" x="36" y="276">  <tspan class="k">"status"</tspan>: <tspan class="s">"open to freelance"</tspan></text>
+  <text class="mono ln l7" x="36" y="300">}<tspan class="muted" dx="18">200 OK · 42ms</tspan></text>
+</svg>
