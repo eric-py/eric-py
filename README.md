@@ -31,4 +31,8 @@ I design and build scalable backend systems, data platforms and AI-powered tools
 
 <br>
 
+[![committers.top badge](https://user-badge.committers.top/iran_private/eric-py.svg)](https://user-badge.committers.top/iran_private/eric-py)
+
+<br>
+
 <img src="https://raw.githubusercontent.com/eric-py/eric-py/output/snake.svg" width="100%" alt="Contribution snake animation" />
